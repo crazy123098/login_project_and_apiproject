@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="lightblue">
+	<center>
+	<h1>Trainer Schedule Form</h1>
+	<hr>
+<form action="" method="post">
+	{% csrf_token %}
+	Enter your Trainer Name : <input id="Trainer_name" type="text" name="Trainer_name" ><br><br>
+    Enter your Course :<input id="Course" type="text" name="Course" ><br><br>
+    Enter your Student Name :<input id="Student_Name" type="text" name="Student_Name" ><br><br>
+    Enter your Duration :<input id="Duration" type="text" name="Duration" ><br><br>
+    Enter your Timeslate :<input id="Timeslate" type="text" name="Timeslate" ><br><br>
+	<input type="radio" value="yes" name="yes">
+	<input type="submit" value="Sign Up" name="enquiry">
+	<input type="reset" value="Cancel" name="enquiry">
+
+</form>
+</center>
+</body>
+</html>

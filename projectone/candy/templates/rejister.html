@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="lightgreen">
+{% csrf_token %}
+<center>
+    <h1>Student's Information</h1>
+</center>
+<table bgcolor="pink" border="5" width="100%">
+    <thead>
+    <th>Triner Name</th>
+    <th>Course </th>
+    <th>Student Name</th>
+    <th>durtion</th>
+    <th>Timeslate</th>
+    </thead>
+
+   {% for i in StudentInfo %}
+    <tr>
+        <td>{{i.Trainer_name}}</td>
+        <td>{{i.Course}}</td>
+        <td>{{i.Student_Name}}</td>
+        <td>{{i.Duration}}</td>
+        <td>{{i.Timeslate}}</td>
+
+    </tr>
+    {% endfor %}
+
+    <br><a href="{% url 'back' %}">back</a><br>
+
+</table>
+
+</body>
+</html>

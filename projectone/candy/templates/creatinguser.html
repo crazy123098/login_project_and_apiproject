@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="lightblue">
+	<center>
+	<h1>Create Account</h1>
+	<hr>
+<form action="" method="post">
+	{% csrf_token %}
+	Enter your Name : <input id="your_name" type="text" name="your_name" ><br><br>
+    Enter your password :<input id="your_password" type="text" name="your_password" ><br><br>
+    Enter your Email :<input id="your_email" type="text" name="your_email" ><br><br>
+    Enter your Role :<input id="your_role" type="text" name="your_role" ><br><br>
+	<input type="submit" value="Sign Up" name="enquiry">
+	<input type="reset" value="Cancel" name="enquiry">
+
+</form>
+</center>
+</body>
+</html>
